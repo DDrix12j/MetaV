@@ -28,7 +28,7 @@ export const IDV_DATA = {
     { id: 'mad', name: 'Mad Eyes' }, { id: 'dream', name: 'Dream Witch' }, { id: 'axe', name: 'Axe Boy' },
     { id: 'rept', name: 'Evil Reptilian' }, { id: 'bq', name: 'Bloody Queen' }, { id: 'guard', name: 'Guard 26' },
     { id: 'disc', name: '"Disciple"' }, { id: 'vio', name: 'Violinist' }, { id: 'sculp', name: 'Sculptor' },
-    { id: 'undead', name: '"Undead"' }, { id: 'wheel', name: 'Breaking Wheel' }, { id: 'naiad', name: 'Naiad' },
+    { id: 'undead', name: '"Undead"' }, { id: 'wheel', name: 'The Breaking Wheel' }, { id: 'naiad', name: 'Naiad' },
     { id: 'wax', name: 'Wax Artist' }, { id: 'nightm', name: '"Nightmare"' }, { id: 'clerk', name: 'Clerk' },
     { id: 'hermit', name: 'Hermit' }, { id: 'nw', name: 'Night Watch' }, { id: 'opera', name: 'Opera Singer' },
     { id: 'fool', name: '"Fool\'s Gold"' }, { id: 'shadow', name: 'The Shadow' }, { id: 'goat', name: '"Goatman"' },
