@@ -39,7 +39,7 @@ export const IDV_DATA = {
     { id: 23614551, name: 'Drixj/Mio', role: 'Lead Developer, Lawyer/First Officer/Wax Artist', highestRankTier: 'Titan', highestBadge: 'S', faction: 'Survivor' },
     { id: 67, name: 'IDV WIKI', role: 'Data Source', highestRankTier: 'Hydra', highestBadge: 'S', faction: 'Hunter' },
     { id: 17649927, name: 'Pastel Ghost', role: 'Bloody Queen', highestRankTier: 'Hydra', highestBadge: 'A', faction: 'Hunter' },
-    { id: 26672837, name: 'curtis瓶 / Anon', role: 'Clerk', highestRankTier: 'Dragon', highestBadge: 'A', faction: 'Hunter' },
+    { id: 26672837, name: 'curtis瓶 / Anon', role: 'Clerk', highestRankTier: 'EvilDragon', highestBadge: 'A', faction: 'Hunter' },
   ],
   changelog: [
     { ver: 'v1.3', date: '2026-01-26', note: 'Switched to Static Data Structure' },
@@ -584,6 +584,97 @@ export const IDV_DATA = {
                       name: "Sacred Heart Hospital",
                       image: "SacredHeartHospital.png",
                       detail: "These maps offer plenty of high walls with almost windows and pallets closes ttogether, with your map you can  see hunter but hunter cant see you. this way you can abused speed boost and loops"
+              }
+      ]
+    },
+    'feast': {
+      counters: [
+              {
+                      id: "cheer",
+                      name: "Cheerleader",
+                      note: "",
+                      detail: "anyone that can move/change kiting spot fast"
+              },
+              {
+                      id: "merc",
+                      name: "Mercenary",
+                      note: "",
+                      detail: "anyone that can move/change kiting spot fast"
+              },
+              {
+                      id: "aero",
+                      name: "Aeroplanist",
+                      note: "",
+                      detail: "anyone that can move/change kiting spot fast"
+              },
+              {
+                      id: "novel",
+                      name: "Novelist",
+                      note: "",
+                      detail: "anyone that can move/change kiting spot fast  (same case as ann but less lethal)"
+              },
+              {
+                      id: "pup",
+                      name: "Puppeteer",
+                      note: "",
+                      detail: "he pretty much counter everyone except those with chip damage"
+              }
+      ],
+      synergies: [],
+      strongAgainst: [
+              {
+                      id: "coord",
+                      name: "Coordinator",
+                      note: "",
+                      detail: "He doesn't specifically counter any character. only counter play style. But he can counter Coor if you can block her gun with tentacle but that doesn't happen very often."
+              },
+              {
+                      id: "enchant",
+                      name: "Enchantress",
+                      note: "",
+                      detail: "he can also counter patty a little since his charge attack is longer than her stun range"
+              }
+      ],
+      finalTalents: [
+              {
+                      id: "trump",
+                      name: "Trump Card",
+                      web: "Vigilance",
+                      image: "TrumpCard.png",
+                      description: "he doesn't need any specific persona. You can use 36 like every other hunter, use 9 if you rely a lot on nightmare gaze. 12 doesn't do much since surv usually don't window loop kite with him but feel free to use it if you prefer. Personally I use only 6 and pick personas that suit my playstyle, like anti stun, camping stuff, and fast pallet breaking."
+              },
+              {
+                      id: "detention",
+                      name: "Detention",
+                      web: "Deceit",
+                      image: "Detention.png",
+                      description: "he doesn't need any specific persona. You can use 36 like every other hunter, use 9 if you rely a lot on nightmare gaze. 12 doesn't do much since surv usually don't window loop kite with him but feel free to use it if you prefer. Personally I use only 6 and pick personas that suit my playstyle, like anti stun, camping stuff, and fast pallet breaking."
+              }
+      ],
+      activeTraits: [
+              {
+                      id: "patroller",
+                      name: "Patroller",
+                      image: "Patroller.png",
+                      description: "you can hit them easily with a tentacle and follows up with a basic hit",
+                      detail: "The trait allows the Hunter to temporarily summon a Patroller to quickly run up and restrict a Survivor. The trait can be very useful for Hunters who benefit from restricting a Survivor to use their skills, most notably as Gamekeeper and Naiad. The trait can however be countered by Survivors getting behind obstacles and vaulting windows and pallets, so it's important to use it in appropriate situation where the survivor is caught offguard. Patroller can also see use in stalling rescuers approaching chairs to waste their time."
+              },
+              {
+                      id: "peeper",
+                      name: "Peeper",
+                      image: "Peeper.png",
+                      description: "I use peeper - ScelusツBanks",
+                      detail: "The trait allows the Hunter to observe a survivor through obstacles in the Peeper's radius and quickly catch up to them by slowing down their running and interaction speed. It is especially useful on Hunters with ranged abilities that can benefit from the see-through effect, such as Axe Boy and Violinist. The trait can also be useful in crucial areas, such as Cipher Machines, in order to slow down decoding and keep track of Survivors across the map."
+              }
+      ],
+      tip: '',
+      seasonInfo: 'A- in my opinion. His strong suit is in camping and chasing but there are many ways to counter him.  You need to be very patient in order to counter those countering, but if you can he is practically unstoppable. Still, that\'s only the case if you have the aiming skill of Yusuf Dikeç. You also need to be even more patient in order to master him because tf you mean there is no tentacle in sight. It\'s 2 millimetres away from you. He is getting a little buff. Just faster pallet breaking speed. -ScelusツBanks',
+      maps: [
+              {
+                      id: "eversleep",
+                      name: "Eversleeping Town",
+                      image: "Jie-he-100.png",
+                      detail: " It has many spots where you can drop from higher platform which is a guarantee hit especially when he has nightmare gaze. It also has a lot of narrow paths. Other maps that have these features is good for him as well."
               }
       ]
     },

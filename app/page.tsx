@@ -814,14 +814,16 @@ export default function MetaV() {
                           </h4>
                           <div className="space-y-2">
                             {(meta as any).maps.map((map: any, idx: number) => (
-                              <div key={idx} className="bg-slate-950/50 p-2 rounded border border-orange-900/30 flex gap-2">
-                                <div className="w-16 h-16 shrink-0 rounded overflow-hidden bg-orange-900/20">
-                                  <img src={`/images/${map.image}`} alt={map.name} className="w-full h-full object-cover" onError={(e) => (e.target as HTMLImageElement).style.display = 'none'} />
+                              <div key={idx} className="bg-slate-950/50 p-2 rounded border border-orange-900/30">
+                                <div className="flex gap-2 mb-1">
+                                  <div className="w-14 h-14 shrink-0 rounded overflow-hidden bg-orange-900/20">
+                                    <img src={`/images/${map.image}`} alt={map.name} className="w-full h-full object-cover" onError={(e) => (e.target as HTMLImageElement).style.display = 'none'} />
+                                  </div>
+                                  <div className="flex-1 min-w-0">
+                                    <p className="text-orange-300 font-bold text-xs uppercase">{map.name}</p>
+                                  </div>
                                 </div>
-                                <div className="flex-1 min-w-0">
-                                  <p className="text-orange-300 font-bold text-xs uppercase">{map.name}</p>
-                                  {map.detail && <p className="text-slate-300 text-[11px] leading-relaxed line-clamp-2">{map.detail}</p>}
-                                </div>
+                                {map.detail && <p className="text-slate-300 text-[10px] leading-relaxed">{map.detail}</p>}
                               </div>
                             ))}
                           </div>
