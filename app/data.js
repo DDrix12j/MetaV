@@ -40,6 +40,7 @@ export const IDV_DATA = {
     { id: 67, name: 'IDV WIKI', role: 'Data Source', highestRankTier: 'Hydra', highestBadge: 'S', faction: 'Hunter' },
     { id: 17649927, name: 'Pastel Ghost', role: 'Bloody Queen', highestRankTier: 'Hydra', highestBadge: 'A', faction: 'Hunter' },
     { id: 26672837, name: 'curtis瓶 / Anon', role: 'Clerk', highestRankTier: 'EvilDragon', highestBadge: 'A', faction: 'Hunter' },
+    { id: 15430618, name: 'ScelusツBanks', role: 'The Feaster/Puppeteer', highestRankTier: 'OneEyedGiant', highestBadge: 'A', faction: 'Hunter' },
   ],
   changelog: [
     { ver: 'v1.3', date: '2026-01-26', note: 'Switched to Static Data Structure' },
