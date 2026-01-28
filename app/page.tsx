@@ -60,55 +60,55 @@ export default function MetaV() {
         {!selectedFaction && (
           <div className="max-w-7xl mx-auto animate-in fade-in duration-700">
             
-            {/* BIG BUTTONS - HORIZONTAL */}
-            <div className="flex flex-col md:flex-row gap-6 mb-12 h-[32rem]">
+            {/* BIG BUTTONS - 2x2 GRID ON MOBILE, 4 COLUMNS ON DESKTOP */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6 mb-8 md:mb-12 auto-rows-[180px] md:auto-rows-[32rem]">
               {/* Survivors */}
               <button 
                 onClick={() => setSelectedFaction('survivors')}
-                className="group relative flex-1 bg-blue-950/30 border border-blue-900 hover:border-blue-500 rounded-3xl overflow-hidden transition-all hover:scale-105 hover:shadow-[0_0_50px_rgba(59,130,246,0.2)]"
+                className="group relative bg-blue-950/30 border border-blue-900 hover:border-blue-500 rounded-xl md:rounded-3xl overflow-hidden transition-all hover:scale-105 hover:shadow-[0_0_50px_rgba(59,130,246,0.2)]"
               >
                 <div className="absolute inset-0 flex items-center justify-center">
                    <img src="/images/Lanternist.png" onError={(e) => (e.target as HTMLImageElement).style.display = 'none'} className="w-full h-full object-contain object-center translate-x-2 opacity-100" alt="Survivor" />
                 </div>
-                <div className="absolute bottom-0 inset-x-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
-                  <h2 className="text-2xl md:text-3xl font-black italic uppercase text-blue-100 group-hover:text-white">Survivors</h2>
+                <div className="absolute bottom-0 inset-x-0 p-2 md:p-6 bg-gradient-to-t from-black/80 to-transparent">
+                  <h2 className="text-sm md:text-3xl font-black italic uppercase text-blue-100 group-hover:text-white">Survivors</h2>
                 </div>
               </button>
 
               {/* Hunters */}
               <button 
                 onClick={() => setSelectedFaction('hunters')}
-                className="group relative flex-1 bg-red-950/30 border border-red-900 hover:border-red-500 rounded-3xl overflow-hidden transition-all hover:scale-105 hover:shadow-[0_0_50px_rgba(239,68,68,0.2)]"
+                className="group relative bg-red-950/30 border border-red-900 hover:border-red-500 rounded-xl md:rounded-3xl overflow-hidden transition-all hover:scale-105 hover:shadow-[0_0_50px_rgba(239,68,68,0.2)]"
               >
                 <div className="absolute inset-0 flex items-center justify-center">
-                   <img src="/images/QueenBee.png" onError={(e) => (e.target as HTMLImageElement).style.display = 'none'} className="w-full h-full object-cover opacity-100" alt="Hunter" />
+                   <img src="/images/QueenBee.png" onError={(e) => (e.target as HTMLImageElement).style.display = 'none'} className="w-full h-full object-contain object-center opacity-100" alt="Hunter" />
                 </div>
-                <div className="absolute bottom-0 inset-x-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
-                  <h2 className="text-2xl md:text-3xl font-black italic uppercase text-red-100 group-hover:text-white">Hunters</h2>
+                <div className="absolute bottom-0 inset-x-0 p-2 md:p-6 bg-gradient-to-t from-black/80 to-transparent">
+                  <h2 className="text-sm md:text-3xl font-black italic uppercase text-red-100 group-hover:text-white">Hunters</h2>
                 </div>
               </button>
 
               {/* Adjustment Patch Notes */}
               <button 
-                className="group relative flex-1 bg-purple-950/30 border border-purple-900 hover:border-purple-500 rounded-3xl overflow-hidden transition-all hover:scale-105 hover:shadow-[0_0_50px_rgba(168,85,247,0.2)]"
+                className="group relative bg-purple-950/30 border border-purple-900 hover:border-purple-500 rounded-xl md:rounded-3xl overflow-hidden transition-all hover:scale-105 hover:shadow-[0_0_50px_rgba(168,85,247,0.2)]"
               >
                 <div className="absolute inset-0 flex items-center justify-center">
-                   <span className="text-9xl opacity-100">📝</span>
+                   <span className="text-5xl md:text-9xl opacity-100">📝</span>
                 </div>
-                <div className="absolute bottom-0 inset-x-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
-                  <h2 className="text-2xl md:text-3xl font-black italic uppercase text-purple-100 group-hover:text-white">Patch Notes</h2>
+                <div className="absolute bottom-0 inset-x-0 p-2 md:p-6 bg-gradient-to-t from-black/80 to-transparent">
+                  <h2 className="text-sm md:text-3xl font-black italic uppercase text-purple-100 group-hover:text-white">Patch Notes</h2>
                 </div>
               </button>
 
               {/* Season Tier List */}
               <button 
-                className="group relative flex-1 bg-amber-950/30 border border-amber-900 hover:border-amber-500 rounded-3xl overflow-hidden transition-all hover:scale-105 hover:shadow-[0_0_50px_rgba(217,119,6,0.2)]"
+                className="group relative bg-amber-950/30 border border-amber-900 hover:border-amber-500 rounded-xl md:rounded-3xl overflow-hidden transition-all hover:scale-105 hover:shadow-[0_0_50px_rgba(217,119,6,0.2)]"
               >
                 <div className="absolute inset-0 flex items-center justify-center">
-                   <span className="text-9xl opacity-100">⭐</span>
+                   <span className="text-5xl md:text-9xl opacity-100">⭐</span>
                 </div>
-                <div className="absolute bottom-0 inset-x-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
-                  <h2 className="text-2xl md:text-3xl font-black italic uppercase text-amber-100 group-hover:text-white">Tier List</h2>
+                <div className="absolute bottom-0 inset-x-0 p-2 md:p-6 bg-gradient-to-t from-black/80 to-transparent">
+                  <h2 className="text-sm md:text-3xl font-black italic uppercase text-amber-100 group-hover:text-white">Tier List</h2>
                 </div>
               </button>
             </div>
@@ -257,8 +257,9 @@ export default function MetaV() {
               </div>
             </div>
 
-            {/* RIGHT: DATA PANEL */}
-            <div className="xl:w-[500px] shrink-0 h-[81vh] overflow-y-auto custom-scrollbar">
+            {/* RIGHT: DATA PANEL - HIDDEN ON MOBILE, SHOWN IN MODAL */}
+            {/* Desktop View (hidden on mobile) */}
+            <div className="hidden xl:block xl:w-[500px] shrink-0 h-[81vh] overflow-y-auto custom-scrollbar">
                {selectedChar ? (
                  <div 
                    className="rounded-3xl p-6 shadow-2xl relative overflow-hidden border border-slate-700/30"
@@ -628,6 +629,214 @@ export default function MetaV() {
                  </div>
                )}
             </div>
+
+            {/* MOBILE MODAL - CHARACTER DETAILS */}
+            {selectedChar && (
+              <div className="fixed inset-0 z-50 xl:hidden flex items-center justify-center p-4 bg-black/90 backdrop-blur animate-in fade-in duration-300">
+                <div className="bg-slate-900 border border-slate-700 rounded-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto space-y-4 p-6 custom-scrollbar animate-in slide-in-from-bottom-4 duration-300">
+                  {/* Header with Back Button */}
+                  <div className="flex items-center justify-between sticky top-0 bg-slate-900 pb-3 border-b border-slate-700">
+                    <h2 className="text-2xl md:text-3xl font-black text-white uppercase italic leading-none flex-1">
+                      {getName(selectedChar)}
+                    </h2>
+                    <button 
+                      onClick={() => { setSelectedChar(null); setExpandedDetail(null); }}
+                      className="text-slate-400 hover:text-white text-2xl shrink-0 ml-4 transition"
+                    >
+                      ✕
+                    </button>
+                  </div>
+
+                  {meta ? (
+                    <div className="space-y-4 text-sm">
+                      
+                      {/* Strong Against Section */}
+                      {meta.strongAgainst && meta.strongAgainst.length > 0 && (
+                        <div>
+                          <h4 className="text-green-400 text-xs font-black uppercase mb-2 flex items-center gap-2">
+                            <span className="w-2 h-2 bg-green-500 rounded-full"></span> Strong Against
+                          </h4>
+                          <div className="flex flex-wrap gap-2">
+                            {meta.strongAgainst.map((s: any, idx: number) => (
+                              <button
+                                key={idx}
+                                onClick={() => setExpandedDetail(expandedDetail === `strongagainst-${idx}` ? null : `strongagainst-${idx}`)}
+                                className="w-12 h-12 bg-green-900/30 border border-green-900/50 rounded-lg flex items-center justify-center text-xs hover:bg-green-900/50 hover:border-green-500/50 transition cursor-pointer overflow-hidden"
+                                title={s.name}
+                              >
+                                <img src={`/images/Nav${s.name.replace(/[\s'"]/g, '')}.png`} className="w-full h-full object-contain" alt={s.name} onError={(e) => (e.target as HTMLImageElement).style.display = 'none'} />
+                              </button>
+                            ))}
+                          </div>
+                          {expandedDetail?.startsWith('strongagainst-') && (
+                            <div className="mt-2 p-3 bg-green-900/20 border border-green-900/50 rounded-lg text-xs">
+                              {(() => {
+                                const idx = parseInt(expandedDetail.split('-')[1]);
+                                const matchup = meta.strongAgainst?.[idx];
+                                return matchup ? <div><h5 className="text-green-300 font-bold text-xs uppercase mb-1">{matchup.name}</h5><p className="text-slate-300 text-xs">{matchup.detail || matchup.note}</p></div> : null;
+                              })()}
+                            </div>
+                          )}
+                        </div>
+                      )}
+
+                      {/* Weak Against Section */}
+                      {meta.counters && meta.counters.length > 0 && (
+                        <div>
+                          <h4 className="text-red-400 text-xs font-black uppercase mb-2 flex items-center gap-2">
+                            <span className="w-2 h-2 bg-red-500 rounded-full"></span> Weak Against
+                          </h4>
+                          <div className="flex flex-wrap gap-2">
+                            {meta.counters.map((c: any, idx: number) => (
+                              <button
+                                key={idx}
+                                onClick={() => setExpandedDetail(expandedDetail === `counter-${idx}` ? null : `counter-${idx}`)}
+                                className="w-12 h-12 bg-red-900/30 border border-red-900/50 rounded-lg flex items-center justify-center text-xs hover:bg-red-900/50 hover:border-red-500/50 transition cursor-pointer overflow-hidden"
+                                title={c.name}
+                              >
+                                <img src={`/images/Nav${c.name.replace(/[\s'"]/g, '')}.png`} className="w-full h-full object-contain" alt={c.name} onError={(e) => (e.target as HTMLImageElement).style.display = 'none'} />
+                              </button>
+                            ))}
+                          </div>
+                          {expandedDetail?.startsWith('counter-') && (
+                            <div className="mt-2 p-3 bg-red-900/20 border border-red-900/50 rounded-lg text-xs">
+                              {(() => {
+                                const idx = parseInt(expandedDetail.split('-')[1]);
+                                const counter = meta.counters?.[idx];
+                                return counter ? <div><h5 className="text-red-300 font-bold text-xs uppercase mb-1">{counter.name}</h5><p className="text-slate-300 text-xs">{counter.detail || counter.note}</p></div> : null;
+                              })()}
+                            </div>
+                          )}
+                        </div>
+                      )}
+
+                      {/* Synergies Section */}
+                      {meta.synergies && meta.synergies.length > 0 && (
+                        <div>
+                          <h4 className="text-blue-400 text-xs font-black uppercase mb-2 flex items-center gap-2">
+                            <span className="w-2 h-2 bg-blue-500 rounded-full"></span> Strong With
+                          </h4>
+                          <div className="flex flex-wrap gap-2">
+                            {meta.synergies.map((s: any, idx: number) => (
+                              <button
+                                key={idx}
+                                onClick={() => setExpandedDetail(expandedDetail === `synergy-${idx}` ? null : `synergy-${idx}`)}
+                                className="w-12 h-12 bg-blue-900/30 border border-blue-900/50 rounded-lg flex items-center justify-center text-xs hover:bg-blue-900/50 hover:border-blue-500/50 transition cursor-pointer overflow-hidden"
+                                title={s.name}
+                              >
+                                <img src={`/images/Nav${s.name.replace(/[\s'"]/g, '')}.png`} className="w-full h-full object-contain" alt={s.name} onError={(e) => (e.target as HTMLImageElement).style.display = 'none'} />
+                              </button>
+                            ))}
+                          </div>
+                          {expandedDetail?.startsWith('synergy-') && (
+                            <div className="mt-2 p-3 bg-blue-900/20 border border-blue-900/50 rounded-lg text-xs">
+                              {(() => {
+                                const idx = parseInt(expandedDetail.split('-')[1]);
+                                const synergy = meta.synergies?.[idx];
+                                return synergy ? <div><h5 className="text-blue-300 font-bold text-xs uppercase mb-1">{synergy.name}</h5><p className="text-slate-300 text-xs">{synergy.detail || synergy.note}</p></div> : null;
+                              })()}
+                            </div>
+                          )}
+                        </div>
+                      )}
+
+                      {/* Season Info */}
+                      {meta.seasonInfo && (
+                        <div className="p-3 rounded-lg bg-cyan-900/20 border border-cyan-900/50">
+                          <h4 className="text-cyan-400 text-xs font-black uppercase mb-1">Season Info</h4>
+                          <p className="text-slate-300 text-xs leading-relaxed">{meta.seasonInfo}</p>
+                        </div>
+                      )}
+
+                      {/* Final Talents Section */}
+                      {(meta as any)?.finalTalents && (meta as any).finalTalents.length > 0 && (
+                        <div>
+                          <h4 className="text-purple-400 text-xs font-black uppercase mb-2 flex items-center gap-2">
+                            <span className="w-2 h-2 bg-purple-500 rounded-full"></span> Final Talents
+                          </h4>
+                          <div className="grid grid-cols-3 gap-1">
+                            {(meta as any).finalTalents.map((talent: any, idx: number) => (
+                              <button
+                                key={idx}
+                                onClick={() => setExpandedTalent(expandedTalent === idx ? null : idx)}
+                                className="relative rounded overflow-hidden border border-purple-900/50 bg-purple-900/20 hover:border-purple-500/50 transition cursor-pointer aspect-square group"
+                              >
+                                <img src={`/images/${talent.image}`} alt={talent.name} className="w-full h-full object-cover group-hover:opacity-80 transition" onError={(e) => (e.target as HTMLImageElement).style.display = 'none'} />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-0.5">
+                                  <p className="text-purple-300 font-bold text-[7px] uppercase truncate">{talent.name}</p>
+                                </div>
+                              </button>
+                            ))}
+                          </div>
+                          {expandedTalent !== null && (meta as any).finalTalents[expandedTalent] && (
+                            <div className="mt-2 p-2 rounded border border-purple-500/50 bg-purple-900/30 text-xs">
+                              <p className="text-purple-300 font-bold text-xs mb-1">{(meta as any).finalTalents[expandedTalent].name}</p>
+                              <p className="text-slate-300 text-xs leading-relaxed">{(meta as any).finalTalents[expandedTalent].description}</p>
+                            </div>
+                          )}
+                        </div>
+                      )}
+
+                      {/* Active Traits Section */}
+                      {(meta as any)?.activeTraits && (meta as any).activeTraits.length > 0 && (
+                        <div>
+                          <h4 className="text-red-400 text-xs font-black uppercase mb-2 flex items-center gap-2">
+                            <span className="w-2 h-2 bg-red-500 rounded-full"></span> Active Traits
+                          </h4>
+                          <div className="grid grid-cols-3 gap-1">
+                            {(meta as any).activeTraits.map((trait: any, idx: number) => (
+                              <button
+                                key={idx}
+                                onClick={() => setExpandedTrait(expandedTrait === idx ? null : idx)}
+                                className="relative rounded overflow-hidden border border-red-900/50 bg-red-900/20 hover:border-red-500/50 transition cursor-pointer aspect-square group"
+                              >
+                                <img src={`/images/${trait.image}`} alt={trait.name} className="w-full h-full object-cover group-hover:opacity-80 transition" onError={(e) => (e.target as HTMLImageElement).style.display = 'none'} />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-0.5">
+                                  <p className="text-red-300 font-bold text-[7px] uppercase truncate">{trait.name}</p>
+                                </div>
+                              </button>
+                            ))}
+                          </div>
+                          {expandedTrait !== null && (meta as any).activeTraits[expandedTrait] && (
+                            <div className="mt-2 p-2 rounded border border-red-500/50 bg-red-900/30 text-xs">
+                              <p className="text-red-300 font-bold text-xs mb-1">{(meta as any).activeTraits[expandedTrait].name}</p>
+                              <p className="text-slate-300 text-xs leading-relaxed">{(meta as any).activeTraits[expandedTrait].description}</p>
+                            </div>
+                          )}
+                        </div>
+                      )}
+
+                      {/* Top Maps Section */}
+                      {(meta as any)?.maps && (meta as any).maps.length > 0 && (
+                        <div>
+                          <h4 className="text-orange-400 text-xs font-black uppercase mb-2 flex items-center gap-2">
+                            <span className="w-2 h-2 bg-orange-500 rounded-full"></span> Top Maps
+                          </h4>
+                          <div className="space-y-2">
+                            {(meta as any).maps.map((map: any, idx: number) => (
+                              <div key={idx} className="bg-slate-950/50 p-2 rounded border border-orange-900/30 flex gap-2">
+                                <div className="w-16 h-16 shrink-0 rounded overflow-hidden bg-orange-900/20">
+                                  <img src={`/images/${map.image}`} alt={map.name} className="w-full h-full object-cover" onError={(e) => (e.target as HTMLImageElement).style.display = 'none'} />
+                                </div>
+                                <div className="flex-1 min-w-0">
+                                  <p className="text-orange-300 font-bold text-xs uppercase">{map.name}</p>
+                                  {map.detail && <p className="text-slate-300 text-[11px] leading-relaxed line-clamp-2">{map.detail}</p>}
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+
+                    </div>
+                  ) : (
+                    <div className="text-center py-8 border-2 border-dashed border-slate-700 rounded">
+                      <p className="text-slate-400">No Data</p>
+                    </div>
+                  )}
+                </div>
+              </div>
+            )}
 
           </div>
         )}
