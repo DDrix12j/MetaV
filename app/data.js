@@ -39,6 +39,7 @@ export const IDV_DATA = {
     { id: 23614551, name: 'Drixj/Mio', role: 'Lead Developer, Lawyer/First Officer/Wax Artist', highestRankTier: 'Titan', highestBadge: 'S', faction: 'Survivor' },
     { id: 67, name: 'IDV WIKI', role: 'Data Source', highestRankTier: 'Hydra', highestBadge: 'S', faction: 'Hunter' },
     { id: 17649927, name: 'Pastel Ghost', role: 'Bloody Queen', highestRankTier: 'Hydra', highestBadge: 'A', faction: 'Hunter' },
+    { id: 26672837, name: 'curtis瓶 / Anon', role: 'Clerk', highestRankTier: 'Dragon', highestBadge: 'A', faction: 'Hunter' },
   ],
   changelog: [
     { ver: 'v1.3', date: '2026-01-26', note: 'Switched to Static Data Structure' },
@@ -266,7 +267,151 @@ export const IDV_DATA = {
               }
       ]
     },
-
+'clerk': {
+      counters: [
+              {
+                      id: "anti",
+                      name: "Antiquarian",
+                      note: "",
+                      detail: "Stunners Antiquarian, Batter, Forward, Archer etc) Clerk has a very weak to almost zero anti-harassing traits. especially while they are supporting your chase, as double kiting prove to be Clerk’s biggest counter."
+              },
+              {
+                      id: "batter",
+                      name: "Batter",
+                      note: "",
+                      detail: "Stunners Antiquarian, Batter, Forward, Archer etc) Clerk has a very weak to almost zero anti-harassing traits. especially while they are supporting your chase, as double kiting prove to be Clerk’s biggest counter."
+              },
+              {
+                      id: "forward",
+                      name: "Forward",
+                      note: "",
+                      detail: "Stunners Antiquarian, Batter, Forward, Archer etc) Clerk has a very weak to almost zero anti-harassing traits. especially while they are supporting your chase, as double kiting prove to be Clerk’s biggest counter."
+              },
+              {
+                      id: "archer",
+                      name: "Archer",
+                      note: "",
+                      detail: "Stunners Antiquarian, Batter, Forward, Archer etc) Clerk has a very weak to almost zero anti-harassing traits. especially while they are supporting your chase, as double kiting prove to be Clerk’s biggest counter."
+              },
+              {
+                      id: "cheer",
+                      name: "Cheerleader",
+                      note: "",
+                      detail: "Agile characters (Cheerleader, etc)  With Clerk’s reliance on her walk speed for chase, chasing these characters prove to be difficult to deal with, especially while they are supporting your chase, as double kiting prove to be Clerk’s biggest counter."
+              },
+              {
+                      id: "perf",
+                      name: "Perfumer",
+                      note: "",
+                      detail: "Double-hit/ Skill negation characters (Perfumer, Magician, First Officer, Faro Lady…):  With Clerk majorly relying on her hand-hit for damage, these characters can counter her by either tanking hits, or by ending her Record ability prematurely."
+              },
+              {
+                      id: "magician",
+                      name: "Magician",
+                      note: "",
+                      detail: "Double-hit/ Skill negation characters (Perfumer, Magician, First Officer, Faro Lady…):  With Clerk majorly relying on her hand-hit for damage, these characters can counter her by either tanking hits, or by ending her Record ability prematurely."
+              },
+              {
+                      id: "first",
+                      name: "First Officer",
+                      note: "",
+                      detail: "Double-hit/ Skill negation characters (Perfumer, Magician, First Officer, Faro Lady…):  With Clerk majorly relying on her hand-hit for damage, these characters can counter her by either tanking hits, or by ending her Record ability prematurely."
+              },
+              {
+                      id: "faro",
+                      name: "\"Faro Lady\"",
+                      note: "",
+                      detail: "Double-hit/ Skill negation characters (Perfumer, Magician, First Officer, Faro Lady…):  With Clerk majorly relying on her hand-hit for damage, these characters can counter her by either tanking hits, or by ending her Record ability prematurely."
+              },
+              {
+                      id: "lant",
+                      name: "Lanternist",
+                      note: "",
+                      detail: "Clerk is known for her oppressive map control after unlocking her first presence. While most hunters target shaking ciphers to apply pressure, Lanternist can actively counter this by using 'Static Projection' to hide the cipher's movement"
+              },
+              {
+                      id: "explorer",
+                      name: "Explorer",
+                      note: "",
+                      detail: "Explorer with his notes heavily counter Clerk's cipher control, but can benefit if he's recorded while using his notes on ciphers. "
+              }
+      ],
+      synergies: [],
+      strongAgainst: [
+              {
+                      id: "minds",
+                      name: "The Mind's Eye",
+                      note: "",
+                      detail: "Decoders, Raw kiters, Slow vaulting characters (e.g. Mind’s Eye, Doctor, Mechanic, Priestess*…)  (EXCEPT Explorer*): While Clerk’s kit does not inherently counter specific survivors, the interaction speed reduction with Record can stall this even more, giving a larger window for Terror Shocks."
+              },
+              {
+                      id: "mech",
+                      name: "Mechanic",
+                      note: "",
+                      detail: "It’s similar to TME’s situation but harder, as Mechanic must decode with both her main body and Doll, making her more vulnerable to Clerk's ability and cipher locks."
+              },
+              {
+                      id: "priest",
+                      name: "Priestess",
+                      note: "",
+                      detail: "Slow Vaulting and Pallet dropping speed. (Clerk may struggle while trying to chase Priestess with portals.)"
+              },
+              {
+                      id: "lucky",
+                      name: "Lucky Guy",
+                      note: "",
+                      detail: "This mirrors Mechanic's situation. In the current high-tier meta, Lucky Guys often start with a robot to cipher rush, but Clerk effectively counters this strategy despite his recent nerf."
+              }
+      ],
+      finalTalents: [
+              {
+                      id: "trump",
+                      name: "Trump Card",
+                      web: "Vigilance",
+                      image: "TrumpCard.png",
+                      description: "To compensate for Clerk’s lack of mobility throughout the map, Clerk mains commonly use Blink for early games before switching to Teleport for strong endgame potential. Abnormal is also commonly used as Clerk can record her own Abnormals to place on ciphers."
+              },
+              {
+                      id: "detention",
+                      name: "Detention",
+                      web: "Deceit",
+                      image: "Detention.png",
+                      description: "Detention also provides better opportunities for Clerk in the endgame."
+              }
+      ],
+      activeTraits: [
+              {
+                      id: "blink",
+                      name: "Blink",
+                      image: "Blink.png",
+                      description: "Clerk mains commonly use Blink for early games before switching to Teleport for strong endgame potential. ",
+                      detail: "The trait allows the Hunter to phase through obstacles and walls in order to land crucial hits on chased Survivors, at the cost of a very long cooldown. Because of this, Hunters bringing Blink should make cautious use of it and successfully land their hits. Survivors can predict a Blink use, so it's important to use it when the chased Survivors are caught offguard or cannot avoid a hit. The trait is powerful on most Hunters, but characters who rely mostly on their primary damage such as Hell Ember and Photographer benefit from Blink the most."
+              },
+              {
+                      id: "warp",
+                      name: "Warp",
+                      image: "Warp.png",
+                      description: "Very strong skill to replace blink",
+                      detail: "The trait allows the Hunters to create a set of two portals, they can use them to warp between the two locations twice before the portals disappear and the ability enters in cooldown. Survivors can see some visual effects when the Hunters are warping between the portals but they can't interact with them. Some Survivor's abilities can force the hunter through the portal like stunning them, pushing them away or switching positions with them."
+              }
+      ],
+      tip: '',
+      seasonInfo: 'With a kit that uses survivors’ own interactions against them, Clerk is a strong control hunter that forces survivors on their toes and to constantly think about their next moves. Receiving one major nerf in 2022 that increases cooldowns for Inspect (5s -> 6s), Inspect\'s maximum duration (12 -> 10s), reducing Invalid\'s duration (10s -> 9s), reduction of Record\'s maximum duration (12 -> 10s), Clerk mains require resourcefulness with their scrolls when in matches. While viable in lower tiers, double kiting, good stunner survivors and overall better teamwork in higher tiers prove to be a huge challenge for Keigan mains to overcome to win matches. - Curtis',
+      maps: [
+              {
+                      id: "arms",
+                      name: "Arms Factory",
+                      image: "EarlyBetaArms2.png",
+                      detail: "These maps are small, making up for Clerk’s lack of mobility. In addition, the high concentration of pallets and windows provide ample opportunities for Keigan to record interactions while chasing survivors. The small map size also allows her to travel between gates while stalling with Inspect."
+              },
+              {
+                      id: "church",
+                      name: "The Red Church",
+                      image: "Red_Church_Wedding_Area.png",
+                      detail: "These maps are small, making up for Clerk’s lack of mobility. In addition, the high concentration of pallets and windows provide ample opportunities for Keigan to record interactions while chasing survivors. The small map size also allows her to travel between gates while stalling with Inspect."
+              }
+      ]
+    },
     'lawyer': {
       counters: [
               {
