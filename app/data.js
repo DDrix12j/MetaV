@@ -41,6 +41,7 @@ export const IDV_DATA = {
     { id: 17649927, name: 'Pastel Ghost', role: 'Bloody Queen', highestRankTier: 'Hydra', highestBadge: 'A', faction: 'Hunter' },
     { id: 26672837, name: 'curtis瓶 / Anon', role: 'Clerk', highestRankTier: 'EvilDragon', highestBadge: 'A', faction: 'Hunter' },
     { id: 15430618, name: 'ScelusツBanks', role: 'The Feaster/Puppeteer', highestRankTier: 'OneEyedGiant', highestBadge: 'A', faction: 'Hunter' },
+    { id: 63270666, name: 'Limirence/Anon', role: 'Opera Singer', highestRankTier: 'EvilDragon', highestBadge: 'A', faction: 'Hunter' },
   ],
   changelog: [
     { ver: 'v1.3', date: '2026-01-26', note: 'Switched to Static Data Structure' },
@@ -88,53 +89,9 @@ export const IDV_DATA = {
   
   // --- ADD YOUR COUNTERS HERE ---
   meta: {
-    'lucky': {
-      counters: [
-        { id: 'rept', name: 'Evil Reptilian', note: 'Can poison and reveal you easily.', detail: 'Evil Reptilian\'s poison ability reveals your location on the map. Her venom prevents you from using your items effectively during a chase. Avoid being caught out in the open.' },
-        { id: 'wheel', name: 'Breaking Wheel', note: 'Wheel can trap and stun you constantly.', detail: 'Breaking Wheel\'s ability to place traps and stun you makes it extremely difficult to decode or kite. Stay aware of trap placements and stick with teammates for protection.' }
-      ],
-      synergies: [
-        { id: 'mech', name: 'Mechanic', note: 'Mechanic\'s repair speed helps decode faster with Lucky\'s support.', detail: 'Working together, Mechanic can repair generators quickly while Lucky uses his items for utility and support. This combination allows the team to push objectives faster and maintain pressure.' },
-        { id: 'geisha', name: 'Geisha', note: 'Geisha\'s zoning helps protect Lucky from hunters.', detail: 'Geisha\'s umbrella ability creates safe zones where Lucky can freely use items without threat. Work together to control map pressure.' }
-      ],
-      strongAgainst: [
-        { id: 'photo', name: 'Photographer', note: 'Lucky items counter photo abilities.', detail: 'Lucky\'s utility items can block or negate Photographer\'s special camera mechanics. Stay mobile and use items proactively.' }
-      ],
-      finalTalents: [
-        { id: 'flywheel', name: 'Flywheel Effect', web: 'Tranquility', image: 'FlywheelEffect.png', description: 'Increases the speed of item usage and extends duration. Perfect for survivors who rely on items like lucky\'s toolbox or seer\'s flashlight for maximum utility.' },
-        { id: 'borrowed', name: 'Borrowed Time', web: 'Persistence', image: 'Borrowedtime.png', description: 'Grants a temporary speed boost after successfully using items or actions. Helps survivors maintain momentum during chases and escape hunter pressure.' }
-      ],
-      tip: 'Use your items wisely and stick with teammates. Lucky\'s strength is in utility - make every item count!',
-      seasonInfo: 'Tier: A | Current Meta: Very Strong in Season 9. Lucky\'s utility items remain essential for survivor team compositions.',
-      maps: [
-        { id: 'arms', name: 'Arms Factory', image: 'EarlyBetaArms2.png', detail: '' },
-        { id: 'hospital', name: 'Sacred Heart Hospital', image: 'SacredHeartHospital.png', detail: '' }
-      ]
-    },
+   
   
-    'seer': { 
-      counters: [
-        { id: 'clerk', name: 'Clerk', note: 'Clerk can record owl usage and block it.', detail: 'The Clerk\'s recording ability reveals your owl position, and he can use his ability to disable it temporarily during the clip duration. This eliminates the speed boost and fog sense advantage.' },
-        { id: 'guard', name: 'Guard 26', note: 'Chip damage breaks owl instantly.', detail: 'Guard\'s rapid chip damage can break the owl in 2-3 hits before it gains distance. Position your owl carefully to avoid his patrol routes.' }
-      ],
-      synergies: [
-        { id: 'merc', name: 'Mercenary', note: 'Bodyblock allows Seer to farm rage safely.', detail: 'The Mercenary can take damage hits for you while you move around collecting presence/rage. This creates a safe farming zone in early game.' },
-        { id: 'priest', name: 'Priestess', note: 'Global portal healing = free rage farming.', detail: 'Priestess portals allow the team to stay injured, keeping you at optimal distances for owl chases while maintaining healing pressure on the hunter.' }
-      ],
-      strongAgainst: [
-        { id: 'smiley', name: 'Smiley Face', note: 'Owl easily tracks and escapes Smiley.', detail: 'Smiley Face\'s lack of direct counter abilities makes him vulnerable to Seer\'s owl. Use your speed and vision advantage to maintain distance.' }
-      ],
-      finalTalents: [
-        { id: 'tide', name: 'Tide Turner', web: 'Friendliness', image: 'TideTurner.png', description: 'Enhances team coordination and rescue mechanics. Allows you to turn the tides during crucial rescue moments and protect teammates.' },
-        { id: 'borrowed', name: 'Borrowed Time', web: 'Persistence', image: 'Borrowedtime.png', description: 'Grants a temporary speed boost after successfully using items or actions. Helps survivors maintain momentum during chases and escape hunter pressure.' }
-      ],
-      tip: 'Always look behind you to accumulate rage. Communication is key for owl timing.',
-      seasonInfo: 'Tier: S | Current Meta: Top-tier this season. Owl mechanics are dominating competitive play with excellent vision control.',
-      maps: [
-        { id: 'moonlit', name: 'Moonlit River Park', image: 'JIESTMoonlitPoster.png', detail: 'Open map allows Seer to position owl effectively for team vision control.' },
-        { id: 'lakeside', name: 'Lakeside Village', image: 'JIESTLakesideConceptCornfield.png', detail: 'Multiple decoding areas make owl presence crucial for early information.' }
-      ]
-    },
+    
    'bq': {
       counters: [
               {
@@ -432,26 +389,32 @@ export const IDV_DATA = {
                       name: "Clerk",
                       note: "Clerk excels against survivors who rely on raw kiting. Since Lawyer must use pallets and windows to trigger his passive speed buffs and Knee Jerk, he feeds Clerk the exact recordings she needs to counter him later. Additionally, her high base movement speed (4.73 m/s) makes raw kiting difficult. - Drix",
                       detail: "Clerk excels against survivors who rely on raw kiting. Since Lawyer must use pallets and windows to trigger his passive speed buffs and Knee Jerk, he feeds Clerk the exact recordings she needs to counter him later. Additionally, her high base movement speed (4.73 m/s) makes raw kiting difficult. - Drix"
+              },
+              {
+                      id: "nw",
+                      name: "Night Watch",
+                      note: "Night Watch shuts down Lawyer’s reliance on windows, especially if he brings Confined Space (Window Block). His ability to slow survivors down negates Lawyer's speed advantages, and since Night Watch vaults windows and breaks pallets quickly, he can easily catch up before Lawyer can transition to the next loop. - Drix",
+                      detail: "Night Watch shuts down Lawyer’s reliance on windows, especially if he brings Confined Space (Window Block). His ability to slow survivors down negates Lawyer's speed advantages, and since Night Watch vaults windows and breaks pallets quickly, he can easily catch up before Lawyer can transition to the next loop. - Drix"
               }
       ],
       synergies: [
               {
                       id: "toy",
                       name: "Toy Merchant",
-                      note: "",
-                      detail: ""
+                      note: "Toy Merchant is one of the strongest supports in the game, especially after her buff allowing her to pass items to teammates even if their slots aren't empty. She can provide Lawyer with crucial kiting items (like Catapults or Euphorias) to supplement his lack of self-defense tools. - Drix",
+                      detail: "Toy Merchant is one of the strongest supports in the game, especially after her buff allowing her to pass items to teammates even if their slots aren't empty. She can provide Lawyer with crucial kiting items (like Catapults or Euphorias) to supplement his lack of self-defense tools. - Drix"
               },
               {
                       id: "prof",
-                      name: "prof",
-                      note: "",
-                      detail: ""
+                      name: "Professor",
+                      note: "Since Lawyer has no kiting items of his own, Professor’s Scales provide a critical layer of defense. The scales are perfect for \"raw kite\" survivors like Lawyer, giving him a second chance to block damage if he gets caught in a bad position. - Drix",
+                      detail: "Since Lawyer has no kiting items of his own, Professor’s Scales provide a critical layer of defense. The scales are perfect for \"raw kite\" survivors like Lawyer, giving him a second chance to block damage if he gets caught in a bad position. - Drix"
               },
               {
                       id: "girl",
                       name: "\"Little Girl\"",
-                      note: "",
-                      detail: ""
+                      note: "While leeching isn't always advised until the last cipher is primed, \"Little Girl\" turns Lawyer into a vaulting machine. When leeched, she grants him a 15% Vaulting Speed buff and a 30% Pallet/Rescue Speed buff. Combined with his native speed stats, this makes him nearly untouchable in window-heavy areas. - Drix",
+                      detail: "While leeching isn't always advised until the last cipher is primed, \"Little Girl\" turns Lawyer into a vaulting machine. When leeched, she grants him a 15% Vaulting Speed buff and a 30% Pallet/Rescue Speed buff. Combined with his native speed stats, this makes him nearly untouchable in window-heavy areas. - Drix"
               }
       ],
       strongAgainst: [
@@ -459,7 +422,19 @@ export const IDV_DATA = {
                       id: "photo",
                       name: "Photographer",
                       note: "",
-                      detail: ""
+                      detail: "Joseph suffers from a weak base chase capability. When you combine Lawyer’s passive movement speed buffs with the boost from Knee Jerk, it becomes nearly impossible for Joseph to catch up. Lawyer can simply outrun him for the entire duration of the kite especially with knee jerk"
+              },
+              {
+                      id: "hermit",
+                      name: "Hermit",
+                      note: "",
+                      detail: "Lawyer is a natural counter to Hermit’s damage-sharing mechanic. Every time Lawyer damage, it triggers his passive movement speed bonus (Veteran). This makes him incredibly tanky and gives him constant bursts of speed throughout the match if his teammates are sharing damage for him, making him very difficult to target. - Drix"
+              },
+              {
+                      id: "shadow",
+                      name: "The Shadow",
+                      note: "",
+                      detail: "You can effectively counter Ivy’s \"Corruption\" mechanic by abusing high walls and your map. Instead of looking at her (which builds Corruption), use the map to track her location through walls. This allows you to kite her safely without ever needing line-of-sight, completely neutralizing her Red Light mind games. - Drix"
               }
       ],
       finalTalents: [
@@ -485,106 +460,19 @@ export const IDV_DATA = {
                       id: "arms",
                       name: "Arms Factory",
                       image: "EarlyBetaArms2.png",
-                      detail: "These maps offer plenty of high walls with almost windows and pallets closes ttogether, with your map you can  see hunter but hunter cant see you. this way you can abused speed boost and loops"
+                      detail: "These maps offer plenty of high walls with almost windows and pallets closes together, with your map you can  see hunter but hunter cant see you. this way you can abused speed boost and loops"
               },
               {
                       id: "church",
                       name: "The Red Church",
                       image: "Red_Church_Wedding_Area.png",
-                      detail: "These maps offer plenty of high walls with almost windows and pallets closes ttogether, with your map you can  see hunter but hunter cant see you. this way you can abused speed boost and loops"
+                      detail: "These maps offer plenty of high walls with almost windows and pallets closes together, with your map you can  see hunter but hunter cant see you. this way you can abused speed boost and loops"
               },
               {
                       id: "hospital",
                       name: "Sacred Heart Hospital",
                       image: "SacredHeartHospital.png",
-                      detail: "These maps offer plenty of high walls with almost windows and pallets closes ttogether, with your map you can  see hunter but hunter cant see you. this way you can abused speed boost and loops"
-              }
-      ]
-    },'lawyer': {
-      counters: [
-              {
-                      id: "bq",
-                      name: "Bloody Queen",
-                      note: "Bloody Queen counters raw kiters by ignoring obstacles. High-tier BQ players will force out your \"Knee Jerk\" boost, wait for it to end, and then Mirror to close the distance. Even with Flywheel (which has a long 150s cooldown), you lack the tools to survive her mirror transition for long. - Drix",
-                      detail: "Bloody Queen counters raw kiters by ignoring obstacles. High-tier BQ players will force out your \"Knee Jerk\" boost, wait for it to end, and then Mirror to close the distance. Even with Flywheel (which has a long 150s cooldown), you lack the tools to survive her mirror transition for long. - Drix"
-              },
-              {
-                      id: "naiad",
-                      name: "Naiad",
-                      note: "You cannot loop Naiad in a single area due to her humidity and area pressure. While you can force her to retrieve her harpoon by vaulting, you are eventually forced to transition. If you aren't fast enough to reach the next kiting route, her Slipstream (Swim) speed will easily catch you. - Drix",
-                      detail: "You cannot loop Naiad in a single area due to her humidity and area pressure. While you can force her to retrieve her harpoon by vaulting, you are eventually forced to transition. If you aren't fast enough to reach the next kiting route, her Slipstream (Swim) speed will easily catch you. - Drix"
-              },
-              {
-                      id: "clerk",
-                      name: "Clerk",
-                      note: "Clerk excels against survivors who rely on raw kiting. Since Lawyer must use pallets and windows to trigger his passive speed buffs and Knee Jerk, he feeds Clerk the exact recordings she needs to counter him later. Additionally, her high base movement speed (4.73 m/s) makes raw kiting difficult. - Drix",
-                      detail: "Clerk excels against survivors who rely on raw kiting. Since Lawyer must use pallets and windows to trigger his passive speed buffs and Knee Jerk, he feeds Clerk the exact recordings she needs to counter him later. Additionally, her high base movement speed (4.73 m/s) makes raw kiting difficult. - Drix"
-              }
-      ],
-      synergies: [
-              {
-                      id: "toy",
-                      name: "Toy Merchant",
-                      note: "",
-                      detail: ""
-              },
-              {
-                      id: "prof",
-                      name: "prof",
-                      note: "",
-                      detail: ""
-              },
-              {
-                      id: "girl",
-                      name: "\"Little Girl\"",
-                      note: "",
-                      detail: ""
-              }
-      ],
-      strongAgainst: [
-              {
-                      id: "photo",
-                      name: "Photographer",
-                      note: "",
-                      detail: ""
-              }
-      ],
-      finalTalents: [
-              {
-                      id: "knee",
-                      name: "Knee Jerk Reflex",
-                      web: "Bravery",
-                      image: "Knee_Jerk_Reflex.png",
-                      description: "Most popular and best persona for lawyer so far. with his passive trait of vaulting speed and bonus movement speed that stacks. "
-              },
-              {
-                      id: "borrowed",
-                      name: "Borrowed Time",
-                      web: "Persistence",
-                      image: "Borrowedtime.png",
-                      description: "+1 life and movement speed that stacks with the rest of his movement speeds zoomin"
-              }
-      ],
-      tip: 'Kiting in high walls or terrain is in your favour since you can see the hunter, dont be afraid vaulting even dropping pallets and vaulting right away to utilized knee jerk since you got no terrorshocked same with rescuing (decoy ts still happens) at the start of the match keep the map open to maximize traits fast till you reach a cipher. this survivor is best with teams with comms',
-      seasonInfo: 'Tier: S | Current Meta: Lawyer remains a top-tier survivor with virtually no weaknesses. His map provides crucial information, completely countering hunters who rely on Red Light mind games. His immunity to Terror Shocks allows for fearless rescuing and confident vaulting. At Champion/Peak tiers, he breaks the rule of "chase the decoder"—hunters simply cannot afford to chase him. - Drix',
-      maps: [
-              {
-                      id: "arms",
-                      name: "Arms Factory",
-                      image: "EarlyBetaArms2.png",
-                      detail: "These maps offer plenty of high walls with almost windows and pallets closes ttogether, with your map you can  see hunter but hunter cant see you. this way you can abused speed boost and loops"
-              },
-              {
-                      id: "church",
-                      name: "The Red Church",
-                      image: "Red_Church_Wedding_Area.png",
-                      detail: "These maps offer plenty of high walls with almost windows and pallets closes ttogether, with your map you can  see hunter but hunter cant see you. this way you can abused speed boost and loops"
-              },
-              {
-                      id: "hospital",
-                      name: "Sacred Heart Hospital",
-                      image: "SacredHeartHospital.png",
-                      detail: "These maps offer plenty of high walls with almost windows and pallets closes ttogether, with your map you can  see hunter but hunter cant see you. this way you can abused speed boost and loops"
+                      detail: "These maps offer plenty of high walls with almost windows and pallets closes together, with your map you can  see hunter but hunter cant see you. this way you can abused speed boost and loops"
               }
       ]
     },
@@ -676,6 +564,115 @@ export const IDV_DATA = {
                       name: "Eversleeping Town",
                       image: "Jie-he-100.png",
                       detail: " It has many spots where you can drop from higher platform which is a guarantee hit especially when he has nightmare gaze. It also has a lot of narrow paths. Other maps that have these features is good for him as well."
+              }
+      ]
+    },
+    'opera': {
+      counters: [
+              {
+                      id: "psych",
+                      name: "\"Psychologist\"",
+                      note: "",
+                      detail: "Being able to tank more than 2 hits in a chase is good  enoughh for a tie  if the kite is over 60 seconds"
+              },
+              {
+                      id: "pup",
+                      name: "Puppeteer",
+                      note: "",
+                      detail: "Being able to tank more than 2 hits in a chase is good  enoughh for a tie  if the kite is over 60 seconds"
+              },
+              {
+                      id: "archer",
+                      name: "Archer",
+                      note: "",
+                      detail: "Her laceration effect and 1 shot arrows can be a pain to deal with if the archer is skilled since the laceration stun can cancel dashes and it goes up really fast when moving in shadow form"
+              },
+              {
+                      id: "lawyer",
+                      name: "Lawyer",
+                      note: "",
+                      detail: "His movement speed , vaulting speed, and no terror shock passive is really helpful in kiting especially if you are running sui"
+              },
+              {
+                      id: "acro",
+                      name: "Acrobat",
+                      note: "",
+                      detail: "One  of the best and consistent kiters in the game, able to utilize jump spots and bomb effects to ability lock her, make her interaction speed slow, or movement speed slow"
+              }
+      ],
+      synergies: [],
+      strongAgainst: [
+              {
+                      id: "cheer",
+                      name: "Cheerleader",
+                      note: "",
+                      detail: "Her speed is simply not enough to outrun an opera,especially considering her slow down after using her ability"
+              },
+              {
+                      id: "prosp",
+                      name: "Prospector",
+                      note: "",
+                      detail: "Really high chance they can abuse  a magnet  to cancel attack recovery but to be fair it's still skill based "
+              },
+              {
+                      id: "prof",
+                      name: "Professor",
+                      note: "",
+                      detail: "Her fast attack animation gices a high chance u dint react on time or even worse, you might get baited"
+              }
+      ],
+      finalTalents: [
+              {
+                      id: "trump",
+                      name: "Trump Card",
+                      web: "Vigilance",
+                      image: "TrumpCard.png",
+                      description: "Trump Card and Detention are picked mainly for flexibility. Being able to switch to Teleport in the endgame can be huge, especially when combined with smart shadow TP usage to control cipher pressure. It’s a genuine lifesaver when pushing for a win or tie.\n"
+              },
+              {
+                      id: "detention",
+                      name: "Detention",
+                      web: "Deceit",
+                      image: "Detention.png",
+                      description: "Trump Card and Detention are picked mainly for flexibility. Being able to switch to Teleport in the endgame can be huge, especially when combined with smart shadow TP usage to control cipher pressure. It’s a genuine lifesaver when pushing for a win or tie. \n "
+              }
+      ],
+      activeTraits: [
+              {
+                      id: "blink",
+                      name: "Blink",
+                      image: "Blink.png",
+                      description: "blink for stability - limirence",
+                      detail: "The trait allows the Hunter to phase through obstacles and walls in order to land crucial hits on chased Survivors, at the cost of a very long cooldown. Because of this, Hunters bringing Blink should make cautious use of it and successfully land their hits. Survivors can predict a Blink use, so it's important to use it when the chased Survivors are caught offguard or cannot avoid a hit. The trait is powerful on most Hunters, but characters who rely mostly on their primary damage such as Hell Ember and Photographer benefit from Blink the most."
+              },
+              {
+                      id: "abnormal",
+                      name: "Abnormal",
+                      image: "Abnormal.png",
+                      description: "Abnormal for confidence - limirence",
+                      detail: "The trait allows the Hunter to regress and halt Survivors' Cipher Machine progress, while sacrificing map pressure and chasing aid in the process. As a consequence, it is advised to switch from a previous trait to Abnormal by bringing Trump Card, after Survivors have been chaired or the last Cipher Machine is close to completion. The trait can be useful as a last effort on most Hunters, however Clerk and Dream Witch benefit from it the most due to their abilities to use the trait in quick succession."
+              }
+      ],
+      tip: 'Some Opera Tips. Practice in customs regularly – Dash around the map in bot matches and learn how to chain movement with shadow TPs until it feels natural. Cape Redirection Tech – Dash first, then after about a one-second delay, drag and release your shadow cape in the direction you want to redirect yourself. Don’t spam dashes – An Opera that spams dashes is always less optimized than a slightly slower Opera with better routing and cleaner shadow TP usage. Use her A-tier accessory – It makes shadow TP paths much easier to see s',
+      seasonInfo: 'Opera Singer is not the strongest hunter in the current meta, but definitely the most consistent when it comes to securing 3Ks or ties. Her fast movement really helps end chases quickly if you know how to route your dashes and route the survivor properly. That said, she’s one of the most mechanically challenging hunters to play. Dash routing and cape redirection tech can be hard to grasp. If you mess up a dash, not only do you look hella dumb, but you also become a useless basic-attack-only hunter for 9 seconds, which hurts a lot because her entire kit revolves around speed. Another thing I want to note is her sub-par chair camping. She doesn’t have any real camping tools apart from her shadow TPs, so you’ll need to play aggressively—proxy camp, intercept rescuers, and cut them off for a stuff or a guaranteed double down. Many players find this risky since proxy camping almost always invites another survivor to go for a backdoor rescue - limirence',
+      maps: [
+              {
+                      id: "eversleep",
+                      name: "Eversleeping Town",
+                      image: "Jie-he-100.png",
+                      detail: "This might just be personal experience, but the way these maps are structured gives a lot of potential for fast routing and dash optimization, especially when chaining dashes into shadow TP paths efficiently."
+              },
+              {
+                      id: "chinatown",
+                      name: "Chinatown",
+                      image: "Chinatown1.png",
+                      detail: "This might just be personal experience, but the way these maps are structured gives a lot of potential for fast routing and dash optimization, especially when chaining dashes into shadow TP paths efficiently."
+              },
+              {
+                      id: "church",
+                      name: "The Red Church",
+                      image: "Red_Church_Wedding_Area.png",
+                      detail: "This might just be personal experience, but the way these maps are structured gives a lot of potential for fast routing and dash optimization, especially when chaining dashes into shadow TP paths efficiently."
               }
       ]
     },

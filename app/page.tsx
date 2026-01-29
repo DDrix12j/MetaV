@@ -611,6 +611,19 @@ export default function MetaV() {
                          </div>
                        )}
 
+                       {/* Strategy Tips Section */}
+                       {(meta as any)?.tip && (
+                         <div>
+                           <h4 className="text-amber-400 text-xs font-black uppercase mb-3 flex items-center gap-2">
+                             <span className="w-2 h-2 bg-amber-500 rounded-full"></span> 
+                             Strategy Tips
+                           </h4>
+                           <div className="p-4 rounded-xl bg-amber-900/20 border border-amber-900/50">
+                             <p className="text-slate-300 text-xs leading-relaxed">{(meta as any).tip}</p>
+                           </div>
+                         </div>
+                       )}
+
                      </div>
                    ) : (
                      <div className="text-center py-12 opacity-50 border-2 border-dashed border-slate-700 rounded-2xl">
@@ -745,6 +758,14 @@ export default function MetaV() {
                         <div className="p-3 rounded-lg bg-cyan-900/20 border border-cyan-900/50">
                           <h4 className="text-cyan-400 text-xs font-black uppercase mb-1">Season Info</h4>
                           <p className="text-slate-300 text-xs leading-relaxed">{meta.seasonInfo}</p>
+                        </div>
+                      )}
+
+                      {/* Strategy Tips */}
+                      {(meta as any).tip && (
+                        <div className="p-3 rounded-lg bg-amber-900/20 border border-amber-900/50">
+                          <h4 className="text-amber-400 text-xs font-black uppercase mb-1">Strategy Tips</h4>
+                          <p className="text-slate-300 text-xs leading-relaxed">{(meta as any).tip}</p>
                         </div>
                       )}
 
