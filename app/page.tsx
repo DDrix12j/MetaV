@@ -10,6 +10,7 @@ export default function MetaV() {
   const [expandedTrait, setExpandedTrait] = useState<number | null>(null); // Track expanded trait
   const [showChangelog, setShowChangelog] = useState(false); // Modal for changelog
   const [showContributors, setShowContributors] = useState(false); // Modal for contributors
+  const [showDevNotice, setShowDevNotice] = useState(true); // Modal for development notice
 
   // Helper to get name from ID
   const getName = (id: string) => {
@@ -212,6 +213,71 @@ export default function MetaV() {
                       </div>
                     </div>
                   ))}
+                </div>
+              </div>
+            )}
+
+            {/* DEVELOPMENT NOTICE MODAL */}
+            {showDevNotice && (
+              <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/90 backdrop-blur">
+                <div className="bg-gradient-to-b from-slate-900 via-slate-950 to-black border border-amber-700 rounded-2xl p-8 max-w-2xl w-full max-h-96 overflow-y-auto space-y-6">
+                  <div className="flex items-start justify-between gap-4">
+                    <div className="flex items-start gap-4">
+                      <span className="text-4xl flex-shrink-0">⚠️</span>
+                      <div>
+                        <h2 className="text-3xl font-black text-amber-300 uppercase tracking-wide">Website Under Development</h2>
+                      </div>
+                    </div>
+                    <button 
+                      onClick={() => setShowDevNotice(false)}
+                      className="text-slate-400 hover:text-white text-2xl flex-shrink-0"
+                    >
+                      ✕
+                    </button>
+                  </div>
+
+                  <div className="space-y-4 border-t border-amber-700/30 pt-6">
+                    <div>
+                      <p className="text-slate-300 leading-relaxed">
+                        This website is still ongoing and currently in active development. Features and content are subject to change as we continue to improve the platform.
+                      </p>
+                    </div>
+                    <div className="bg-amber-900/20 border border-amber-800/50 rounded-lg p-4">
+                      <p className="text-amber-200 font-bold text-sm">
+                        ⚠️ Mobile View Notice
+                      </p>
+                      <p className="text-slate-400 text-sm mt-1">
+                        Site designs might be buggy on mobile devices. We're working to optimize the experience across all screen sizes.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="border-t border-amber-700/30 pt-6">
+                    <h3 className="text-blue-300 font-black uppercase tracking-wide mb-4">📚 Current Contents</h3>
+                    <div className="grid grid-cols-2 gap-3">
+                      <div className="bg-slate-900/50 p-3 rounded-lg border border-slate-700">
+                        <p className="text-slate-300 font-bold text-sm">⚖️ Lawyer</p>
+                      </div>
+                      <div className="bg-slate-900/50 p-3 rounded-lg border border-slate-700">
+                        <p className="text-slate-300 font-bold text-sm">🍽️ The Feaster</p>
+                      </div>
+                      <div className="bg-slate-900/50 p-3 rounded-lg border border-slate-700">
+                        <p className="text-slate-300 font-bold text-sm">👑 Bloody Queen</p>
+                      </div>
+                      <div className="bg-slate-900/50 p-3 rounded-lg border border-slate-700">
+                        <p className="text-slate-300 font-bold text-sm">🎭 Opera Singer</p>
+                      </div>
+                    </div>
+                    <button
+                      onClick={() => {
+                        setShowDevNotice(false);
+                        setShowContributors(true);
+                      }}
+                      className="w-full mt-4 p-3 bg-blue-600 hover:bg-blue-500 text-white rounded-lg font-bold uppercase text-xs transition"
+                    >
+                      👥 View Contributors List
+                    </button>
+                  </div>
                 </div>
               </div>
             )}
