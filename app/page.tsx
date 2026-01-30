@@ -267,6 +267,9 @@ export default function MetaV() {
                       <div className="bg-slate-900/50 p-3 rounded-lg border border-slate-700">
                         <p className="text-slate-300 font-bold text-sm">🎭 Opera Singer</p>
                       </div>
+                      <div className="bg-slate-900/50 p-3 rounded-lg border border-slate-700">
+                        <p className="text-slate-300 font-bold text-sm">🏺 Antiquarian</p>
+                      </div>
                     </div>
                     <button
                       onClick={() => {

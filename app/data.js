@@ -42,6 +42,7 @@ export const IDV_DATA = {
     { id: 26672837, name: 'curtis瓶 / Anon', role: 'Clerk', highestRankTier: 'EvilDragon', highestBadge: 'A', faction: 'Hunter' },
     { id: 15430618, name: 'ScelusツBanks', role: 'The Feaster/Puppeteer', highestRankTier: 'OneEyedGiant', highestBadge: 'A', faction: 'Hunter' },
     { id: 63270666, name: 'Limirence/Anon', role: 'Opera Singer', highestRankTier: 'EvilDragon', highestBadge: 'A', faction: 'Hunter' },
+    { id: 22479291/34915765, name: 'Maou/BaMaASIAN', role: 'Antiquarian', highestRankTier: 'Titan', highestBadge: 'S', faction: 'Survivor' },
   ],
   changelog: [
     { ver: 'v1.3', date: '2026-01-26', note: 'Switched to Static Data Structure' },
@@ -90,7 +91,130 @@ export const IDV_DATA = {
   // --- ADD YOUR COUNTERS HERE ---
   meta: {
    
-  
+  'anti': {
+      counters: [
+              {
+                      id: "bq",
+                      name: "Bloody Queen",
+                      note: "",
+                      detail: "Her mirrors penetrate terrain and ignore the Antiquarian's flute defenses, allowing her to land hits from a distance without engaging in the close-range stun mechanics."
+              },
+              {
+                      id: "undead",
+                      name: "\"Undead\"",
+                      note: "",
+                      detail: "His high-pressure, chase-oriented playstyle and dash abilities allow him to close gaps relentlessly. His immunity to traditional stuns (when charged) and ability to disable item usage limits the Antiquarian's maneuverability."
+              },
+              {
+                      id: "shadow",
+                      name: "The Shadow",
+                      note: "",
+                      detail: "Ivy’s scream ability can cancel the Antiquarian's flute skills mid-animation. This makes her a difficult matchup for beginners or even pros who mistime their disruption."
+              }
+      ],
+      synergies: [
+              {
+                      id: "nw",
+                      name: "Night Watch",
+                      note: "",
+                      detail: "Antiquarian can disrupt his ability to reduce survivor interactions. Since he relies on getting close to deal damage, her mobility and disarms can constantly force him to switch targets."
+              },
+              {
+                      id: "geisha",
+                      name: "Geisha",
+                      note: "",
+                      detail: "These hunters rely on rapid, close-range movement. Antiquarian excels here by punishing their aggression with knockbacks and disarms."
+              },
+              {
+                      id: "opera",
+                      name: "Opera Singer",
+                      note: "",
+                      detail: "These hunters rely on rapid, close-range movement. Antiquarian excels here by punishing their aggression with knockbacks and disarms."
+              },
+              {
+                      id: "photo",
+                      name: "Photographer",
+                      note: "",
+                      detail: "Any hunter that relies primarily on basic attacks and close-range pressure is generally at a disadvantage against a skilled Antiquarian."
+              }
+      ],
+      strongAgainst: [
+              {
+                      id: "prosp",
+                      name: "Prospector",
+                      note: "",
+                      detail: "These survivors can chain crowd control with the Antiquarian to make it impossible for the Hunter to pick up a downed teammate."
+              },
+              {
+                      id: "batter",
+                      name: "Batter",
+                      note: "",
+                      detail: "These survivors can chain crowd control with the Antiquarian to make it impossible for the Hunter to pick up a downed teammate."
+              },
+              {
+                      id: "acro",
+                      name: "Acrobat",
+                      note: "",
+                      detail: "These survivors can chain crowd control with the Antiquarian to make it impossible for the Hunter to pick up a downed teammate."
+              },
+              {
+                      id: "cheer",
+                      name: "Cheerleader",
+                      note: "",
+                      detail: "Her cooldown buff is massive for Antiquarian. It allows for an extra \"hit\" or flute usage during a kite when all other skills are on cooldown, which can be a lifesaver."
+              },
+              {
+                      id: "seer",
+                      name: "Seer",
+                      note: "",
+                      detail: "Provides owl protection to allow the Antiquarian to play more aggressively without taking damage."
+              },
+              {
+                      id: "psych",
+                      name: "\"Psychologist\"",
+                      note: "",
+                      detail: "A strong bias pick for aggressive plays. The Antiquarian can perform a \"14-second Disarm\" combo (hitting the0hunter twice) and then use the disarm duration to receive a long-distance heal from the Psychologist. "
+              }
+      ],
+      finalTalents: [
+              {
+                      id: "flywheel",
+                      name: "Flywheel Effect",
+                      web: "Tranquility",
+                      image: "FlywheelEffect.png",
+                      description: " Essential for dodging key abilities and extending kites."
+              },
+              {
+                      id: "borrowed",
+                      name: "Borrowed Time",
+                      web: "Persistence",
+                      image: "Borrowedtime.png",
+                      description: "Standard survivor talent for late-game clutch plays (healing to full when the exit gates open)."
+              }
+      ],
+      tip: 'To master the Antiquarian, you must balance aggressive harassment with disciplined resource management. Maintain a "mid-range" positioning of approximately 10 meters from the Hunter—close enough to threaten with your flute but far enough to avoid taking damage—and always utilize high walls to pin Hunters for maximum stun duration. If you miss a wall pin, quickly combine "Sweep" and "Stab" to push the Hunter back and create distance. Be conservative with your durability; try to save at least two charges for emergencies and focus primarily on rushing ciphers rather than forcing unnecessary rescues. However, when you do commit to a balloon rescue, timing is everything: bait the Hunter by pretending to retreat, then use your jump to close the gap and strike exactly as the pickup animation ends, as you cannot stun them during the animation itself.',
+      seasonInfo: 'Currently, the Antiquarian is widely considered an S - Tier character, dominating the meta as arguably the strongest kiter and disruptive support in the game. She excels at controlling the Hunter’s tempo through high-pressure crowd control, making her indispensable in coordinated play. However, this power comes with a steep learning curve; she is a skill-based survivor that requires significant dedication, with experienced players noting it can take upwards of six months to master her mechanics and earn a top-tier S-Badge.',
+      maps: [
+              {
+                      id: "church",
+                      name: "The Red Church",
+                      image: "Red_Church_Wedding_Area.png",
+                      detail: "Small maps with high walls, closely spaced wooden planks, and tight layouts are ideal. These allow her to pin hunters against walls for stuns."
+              },
+              {
+                      id: "arms",
+                      name: "Arms Factory",
+                      image: "EarlyBetaArms2.png",
+                      detail: "Small maps with high walls, closely spaced wooden planks, and tight layouts are ideal. These allow her to pin hunters against walls for stuns."
+              },
+              {
+                      id: "hospital",
+                      name: "Sacred Heart Hospital",
+                      image: "SacredHeartHospital.png",
+                      detail: "Small maps with high walls, closely spaced wooden planks, and tight layouts are ideal. These allow her to pin hunters against walls for stuns."
+              }
+      ]
+    },
     
    'bq': {
       counters: [
