@@ -113,33 +113,7 @@ export const IDV_DATA = {
               }
       ],
       synergies: [
-              {
-                      id: "nw",
-                      name: "Night Watch",
-                      note: "",
-                      detail: "Antiquarian can disrupt his ability to reduce survivor interactions. Since he relies on getting close to deal damage, her mobility and disarms can constantly force him to switch targets."
-              },
-              {
-                      id: "geisha",
-                      name: "Geisha",
-                      note: "",
-                      detail: "These hunters rely on rapid, close-range movement. Antiquarian excels here by punishing their aggression with knockbacks and disarms."
-              },
-              {
-                      id: "opera",
-                      name: "Opera Singer",
-                      note: "",
-                      detail: "These hunters rely on rapid, close-range movement. Antiquarian excels here by punishing their aggression with knockbacks and disarms."
-              },
-              {
-                      id: "photo",
-                      name: "Photographer",
-                      note: "",
-                      detail: "Any hunter that relies primarily on basic attacks and close-range pressure is generally at a disadvantage against a skilled Antiquarian."
-              }
-      ],
-      strongAgainst: [
-              {
+               {
                       id: "prosp",
                       name: "Prospector",
                       note: "",
@@ -174,6 +148,32 @@ export const IDV_DATA = {
                       name: "\"Psychologist\"",
                       note: "",
                       detail: "A strong bias pick for aggressive plays. The Antiquarian can perform a \"14-second Disarm\" combo (hitting the0hunter twice) and then use the disarm duration to receive a long-distance heal from the Psychologist. "
+              }
+      ],
+      strongAgainst: [
+              {
+                      id: "nw",
+                      name: "Night Watch",
+                      note: "",
+                      detail: "Antiquarian can disrupt his ability to reduce survivor interactions. Since he relies on getting close to deal damage, her mobility and disarms can constantly force him to switch targets."
+              },
+              {
+                      id: "geisha",
+                      name: "Geisha",
+                      note: "",
+                      detail: "These hunters rely on rapid, close-range movement. Antiquarian excels here by punishing their aggression with knockbacks and disarms."
+              },
+              {
+                      id: "opera",
+                      name: "Opera Singer",
+                      note: "",
+                      detail: "These hunters rely on rapid, close-range movement. Antiquarian excels here by punishing their aggression with knockbacks and disarms."
+              },
+              {
+                      id: "photo",
+                      name: "Photographer",
+                      note: "",
+                      detail: "Any hunter that relies primarily on basic attacks and close-range pressure is generally at a disadvantage against a skilled Antiquarian."
               }
       ],
       finalTalents: [
